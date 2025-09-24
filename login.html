@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Portal - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="toggle-container">
+        <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
+    </div>
+
+    <header>
+        <h1>Login to Campus Portal</h1>
+    </header>
+
+    <main>
+        <form id="loginForm"
+            style="max-width:400px;margin:2rem auto; padding:2rem; background:#fff; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1);">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@college.com" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="role">Login as:</label>
+            <select id="role" name="role" required>
+                <option value="">--Select Role--</option>
+                <option value="student">Student</option>
+                <option value="cdc">CDC Admin</option>
+                <option value="central">Central Admin</option>
+            </select>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p style="text-align:center;">Don't have an account? <a href="register.html">Register Here</a></p>
+    </main>
+
+    <footer>
+        <p>© 2025 Campus Community Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

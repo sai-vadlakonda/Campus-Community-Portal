@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Portal - CDC Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="toggle-container">
+        <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
+    </div>
+
+    <header>
+        <h1>CDC Admin Dashboard</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <h2>Branch Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>CGPA</th>
+                        <th>Backlogs</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sai Vadlakonda</td>
+                        <td>CSE</td>
+                        <td>4th</td>
+                        <td>8.5</td>
+                        <td>0</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Anjali Kumar</td>
+                        <td>CSE</td>
+                        <td>3rd</td>
+                        <td>8.0</td>
+                        <td>0</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2>Job Postings for Branch</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Sector</th>
+                        <th>Branch Eligible</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infosys</td>
+                        <td>Software Engineer</td>
+                        <td>Software</td>
+                        <td>CSE, ECE</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Amazon</td>
+                        <td>Data Analyst Intern</td>
+                        <td>Data Science</td>
+                        <td>CSE, ECE</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Campus Community Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Portal - Job Listings</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="toggle-container">
+        <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
+    </div>
+
+    <header>
+        <h1>Available Job Positions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="student-dashboard.html">Dashboard</a>
+            <a href="results.html">Results</a>
+            <a href="login.html">Logout</a>
+        </nav>
+    </header>
+
+    <section style="max-width:800px; margin:2rem auto; text-align:center;">
+        <input type="text" id="searchInput" placeholder="Search by company or branch..."
+            style="width:80%; padding:0.7rem; border-radius:5px; border:1px solid #ccc;" onkeyup="filterJobs()">
+    </section>
+
+    <section class="job-list" id="jobList">
+        <div class="job">
+            <h3>Software Engineer - Infosys</h3>
+            <p class="branch"><strong>Branch:</strong> CSE, ECE</p>
+            <p><strong>CGPA Required:</strong> 7.5+</p>
+            <p><strong>Sector:</strong> Software</p>
+            <a href="job-details.html" class="btn">View Details</a>
+        </div>
+
+        <div class="job">
+            <h3>Data Analyst Intern - Amazon</h3>
+            <p class="branch"><strong>Branch:</strong> CSE, ECE</p>
+            <p><strong>CGPA Required:</strong> 8.0+</p>
+            <p><strong>Sector:</strong> Data Science</p>
+            <a href="job-details.html" class="btn">View Details</a>
+        </div>
+
+        <div class="job">
+            <h3>Hardware Engineer - Wipro</h3>
+            <p class="branch"><strong>Branch:</strong> ECE, EE</p>
+            <p><strong>CGPA Required:</strong> 7.0+</p>
+            <p><strong>Sector:</strong> Hardware</p>
+            <a href="job-details.html" class="btn">View Details</a>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2025 Campus Community Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

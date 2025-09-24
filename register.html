@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Portal - Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div class="toggle-container">
+        <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
+    </div>
+
+    <header>
+        <h1>Student Registration Form</h1>
+    </header>
+
+    <main>
+        <form id="studentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="yourname@college.com" required>
+
+            <label for="year">Year / Semester:</label>
+            <select id="year" name="year" required>
+                <option value="">--Select Year/Sem--</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+                <option value="">--Select Branch--</option>
+                <option value="CSE">CSE</option>
+                <option value="CSE">CSM</option>
+                <option value="CSE">CSD</option>
+                <option value="ECE">ECE</option>
+                <option value="ME">Mechanical</option>
+                <option value="CE">Civil</option>
+                <option value="EE">EEE</option>
+            </select>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="number" id="cgpa" name="cgpa" step="0.01" min="0" max="10" placeholder="e.g., 8.5" required>
+
+            <label for="backlogs">No. of Backlogs:</label>
+            <input type="number" id="backlogs" name="backlogs" min="0" placeholder="e.g., 0" required>
+
+            <label for="internship">Last Internship Details:</label>
+            <textarea id="internship" name="internship" rows="3" placeholder="Company, Role, Duration"></textarea>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2025 Campus Community Portal. All Rights Reserved.</p>
+    </footer>
